@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Mutasim Billah — Build. Compete. Explore.">
+  <defs>
+    <pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0v60" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="18%" cy="22%" r="70%">
+      <stop offset="0%" stop-color="#38E1FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#38E1FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#08090B"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g font-family="'Space Grotesk',Inter,sans-serif">
+    <text x="80" y="150" fill="#38E1FF" font-size="20" letter-spacing="8" font-weight="500">MUTASIM BILLAH</text>
+    <text x="76" y="290" fill="#F5F5F5" font-size="112" font-weight="700" letter-spacing="-4">BUILD.</text>
+    <text x="76" y="400" fill="#F5F5F5" font-size="112" font-weight="700" letter-spacing="-4">COMPETE.</text>
+    <text x="76" y="510" fill="#38E1FF" font-size="112" font-weight="700" letter-spacing="-4">EXPLORE.</text>
+    <text x="80" y="575" fill="#858993" font-size="21" letter-spacing="2">Robotics Enthusiast &#183; Programmer &#183; Problem Solver &#183; Explorer</text>
+  </g>
+  <rect x="0" y="626" width="1200" height="4" fill="#38E1FF" fill-opacity="0.6"/>
+</svg>

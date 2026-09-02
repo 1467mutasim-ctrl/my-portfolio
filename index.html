@@ -1,324 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mutasim Billah | Robotics & Embedded Systems Engineer</title>
-  <meta name="description" content="Portfolio of Mutasim Billah - ICE Undergraduate, Robotics Developer, and Problem Solver." />
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#08090B" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>MB<span class="logo-bracket">/&gt;</span>
-      </a>
-      
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact" class="nav-btn">Contact Me</a>
-      </nav>
+    <title>Mutasim Billah — Robotics • Software • Engineering</title>
+    <meta
+      name="description"
+      content="Portfolio of Mutasim Billah — robotics enthusiast, programmer and problem solver exploring robotics, electronics, software and creative work."
+    />
+    <meta name="author" content="Mutasim Billah" />
+    <link rel="canonical" href="/" />
 
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-  </header>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mutasim Billah — Robotics • Software • Engineering" />
+    <meta
+      property="og:description"
+      content="Portfolio of Mutasim Billah — robotics enthusiast, programmer and problem solver exploring robotics, electronics, software and creative work."
+    />
+    <meta property="og:site_name" content="Mutasim Billah" />
+    <meta property="og:image" content="/images/og-cover.svg" />
+    <meta property="og:image:alt" content="Mutasim Billah — Build. Compete. Explore." />
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="status-badge">
-          <span class="status-dot"></span> Available for Research & Prototyping
-        </div>
-        <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">Mutasim Billah</span>
-        </h1>
-        <p class="hero-subtitle">
-          Information & Communication Engineering Undergraduate | Robotics Developer | Problem Solver
-        </p>
-        <p class="hero-bio">
-          Core Member at <strong>Team Durontojatra</strong>. Bridging hardware engineering with software control to build autonomous and competitive robotic solutions.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
-      </div>
-      
-      <div class="hero-visual">
-        <div class="image-wrapper">
-          <div class="glow-orb"></div>
-          <img src="assets/profile.jpg" alt="Mutasim Billah" class="profile-img" />
-          <div class="floating-badge">
-            <i class="fa-solid fa-microchip"></i>
-            <span>Embedded Systems</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mutasim Billah — Robotics • Software • Engineering" />
+    <meta
+      name="twitter:description"
+      content="Robotics enthusiast, programmer and problem solver. Build. Compete. Explore."
+    />
+    <meta name="twitter:image" content="/images/og-cover.svg" />
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Background</span>
-        <h2 class="section-title">Engineering with Purpose</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card glass-panel">
-          <p>
-            I am an Information and Communication Engineering undergraduate at the <strong>Bangladesh University of Professionals (BUP)</strong>. My primary focus lies in robotics development, embedded systems, and applied problem-solving.
-          </p>
-          <p>
-            Whether prototyping amphibious environmental robots or tuning high-torque motor controllers for competitive soccer bots, I thrive at the intersection of circuit logic and code.
-          </p>
-          <p>
-            Beyond technical engineering, years of competing as a national Taekwondo athlete have instilled deep discipline, tactical precision, and composure under pressure—qualities I bring to every engineering project.
-          </p>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-card glass-panel">
-            <span class="stat-number">Runner-Up</span>
-            <span class="stat-label">National Robotics Championship 2025</span>
-          </div>
-          <div class="stat-card glass-panel">
-            <span class="stat-number">Top 10</span>
-            <span class="stat-label">Robo Fusion (Representing BD in Malaysia)</span>
-          </div>
-          <div class="stat-card glass-panel">
-            <span class="stat-number">2x</span>
-            <span class="stat-label">National Games Medalist (Taekwondo)</span>
-          </div>
-          <div class="stat-card glass-panel">
-            <span class="stat-number">Team</span>
-            <span class="stat-label">Durontojatra Robotics Core</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Skills -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Capabilities</span>
-        <h2 class="section-title">Technical Arsenal</h2>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Programming -->
-        <div class="skill-category glass-panel">
-          <div class="category-icon"><i class="fa-solid fa-code"></i></div>
-          <h3>Languages</h3>
-          <ul class="skill-list">
-            <li><span>C / C++</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></li>
-            <li><span>Java</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></li>
-            <li><span>Python</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></li>
-            <li><span>HTML5 & CSS3</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></li>
-          </ul>
-        </div>
-
-        <!-- Hardware & Embedded -->
-        <div class="skill-category glass-panel">
-          <div class="category-icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>Hardware & Embedded</h3>
-          <ul class="skill-list">
-            <li><span>ESP32 / Microcontrollers</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></li>
-            <li><span>Motor Drivers (BTS7960)</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></li>
-            <li><span>Sensor Array Integration</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></li>
-            <li><span>PWM Control & Circuit Logic</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></li>
-          </ul>
-        </div>
-
-        <!-- Databases & Simulation -->
-        <div class="skill-category glass-panel">
-          <div class="category-icon"><i class="fa-solid fa-database"></i></div>
-          <h3>Tools & Databases</h3>
-          <ul class="skill-list">
-            <li><span>MySQL & PostgreSQL</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></li>
-            <li><span>MATLAB & DSP Analysis</span><div class="bar"><div class="fill" style="width: 75%;"></div></div></li>
-            <li><span>Cisco Packet Tracer</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></li>
-            <li><span>Git & Version Control</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card glass-panel">
-          <div class="project-media">
-            <img src="assets/aqua-guard.png" alt="Aqua Guard Machine by Team Durontojatra" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Robotics</span>
-              <span>Solar Powered</span>
-              <span>Team Durontojatra</span>
-            </div>
-            <h3 class="project-title">Aqua Guard — Amphibious Autonomous Bot</h3>
-            <p class="project-desc">
-              An amphibious surface-cleaning and monitoring robotic unit engineered with dual pontoons, paddle-wheel mobility, a conveyor collection system, and solar power integration for prolonged waterborne deployment.
-            </p>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card glass-panel">
-          <div class="project-media">
-            <img src="assets/nrc-2025.jpg" alt="National Robotics Championship 2025 Robosoccer Runner Up" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>ESP32</span>
-              <span>BTS7960 Drivers</span>
-              <span>Robosoccer</span>
-            </div>
-            <h3 class="project-title">High-Performance Robosoccer Machine</h3>
-            <p class="project-desc">
-              Custom-engineered combat/soccer robot utilizing optimized microcontrollers, high-current H-bridge drivers, low-latency communication, and durable chassis design. Built for high-torque responsiveness on competitive turf.
-            </p>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card glass-panel">
-          <div class="project-body no-img-body">
-            <div class="project-tags">
-              <span>IR Sensor Arrays</span>
-              <span>PID Control</span>
-              <span>Embedded C</span>
-            </div>
-            <h3 class="project-title">Autonomous Line Follower Robot (LFR)</h3>
-            <p class="project-desc">
-              Designed and tuned a dedicated LFR capable of dynamic speed management and acute angle navigation using weighted sensor readings and PID control loops for competitive race tracks.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Honors & Achievements -->
-  <section id="achievements" class="section achievements-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Milestones</span>
-        <h2 class="section-title">Honors & Competitions</h2>
-      </div>
-
-      <div class="achievements-grid">
-        <!-- Achievement 1 -->
-        <div class="achievement-card glass-panel highlight-border">
-          <div class="achievement-img-wrap">
-            <img src="assets/malaysia-qualifier.jpg" alt="World SDG Challenge 2026 Malaysia Qualifier" />
-          </div>
-          <div class="achievement-details">
-            <div class="achievement-date">Global Qualifier • 2026</div>
-            <h3>World SDG Challenge — Kuala Lumpur, Malaysia</h3>
-            <p>
-              Ranked in the <strong>Top 10 at Robo Fusion (organized by UFTB)</strong>, qualifying to represent Bangladesh and BUP internationally with Team Durontojatra at Multimedia University (MMU), Malaysia.
-            </p>
-          </div>
-        </div>
-
-        <!-- Achievement 2 -->
-        <div class="achievement-card glass-panel">
-          <div class="achievement-img-wrap">
-            <img src="assets/nrc-2025.jpg" alt="National Robotics Championship 2025 Award" />
-          </div>
-          <div class="achievement-details">
-            <div class="achievement-date">National • 2025</div>
-            <h3>Runners-Up — National Robotics Championship (NRC)</h3>
-            <p>
-              Awarded Runner-Up title in the Robosoccer segment competing against top university teams across the country.
-            </p>
-          </div>
-        </div>
-
-        <!-- Achievement 3 -->
-        <div class="achievement-card glass-panel">
-          <div class="achievement-icon-box">
-            <i class="fa-solid fa-medal"></i>
-          </div>
-          <div class="achievement-details">
-            <div class="achievement-date">Athletics • 2016 & 2017</div>
-            <h3>National Games Medalist — Taekwondo</h3>
-            <p>
-              Secured a <strong>Silver Medal (2016)</strong> and a <strong>Bronze Medal (2017)</strong> in National Taekwondo championships, building the foundation of discipline and tactical focus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="contact-box glass-panel">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Let's Build Something Exceptional</h2>
-        <p class="contact-desc">
-          Interested in collaborating on robotics, embedded development, or engineering innovation? Reach out directly.
-        </p>
-
-        <div class="contact-methods">
-          <a href="mailto:your.email@example.com" class="contact-chip">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email Me</span>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-chip">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-chip">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Mutasim Billah. Engineered with precision.</p>
-      <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Top</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
