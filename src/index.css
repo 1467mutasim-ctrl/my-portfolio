@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    /* Height of the floating nav — used to offset scroll targets. */
+    --nav-offset: 88px;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --nav-offset: 104px;
+    }
+  }
+
+  * {
+    @apply border-ink-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink-base font-body text-text-primary antialiased;
+    /* Prevents horizontal drift from wide display type on small screens. */
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-sans;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Every section is scrolled to beneath the floating navigation. */
+  section[id] {
+    scroll-margin-top: var(--nav-offset);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-ink-base;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    @apply bg-accent/25 text-text-primary;
+  }
+
+  /* Scrollbar — restrained, matches the surface palette. */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-base;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-ink-line;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-text-faint;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Small uppercase technical label used above every section heading. */
+  .overline {
+    @apply font-mono text-[10px] uppercase leading-none tracking-overline text-text-faint sm:text-[11px];
+  }
+
+  /* Hairline panel used for cards across the site. */
+  .panel {
+    @apply border border-ink-line bg-ink-surface/70;
+  }
+
+  /* Faint engineering grid, fading out toward the bottom. */
+  .tech-grid {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  @media (min-width: 768px) {
+    .tech-grid {
+      background-size: 64px 64px;
+    }
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(180deg, #000 40%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 40%, transparent 100%);
+  }
+
+  .mask-fade-y {
+    -webkit-mask-image: linear-gradient(180deg, transparent, #000 18%, #000 82%, transparent);
+    mask-image: linear-gradient(180deg, transparent, #000 18%, #000 82%, transparent);
+  }
+
+  /* Hides the scrollbar on horizontally scrollable rails. */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
